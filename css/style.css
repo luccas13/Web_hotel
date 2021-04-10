@@ -1,16 +1,46 @@
 li{
-    width: 150px;
-    height: 30px;
-    font-size: 24px;
     display: inline;
-    padding-right: 30px;
-    padding-left: 30px;
-    background: rgb(99, 226, 152);
-    color: #fff;
 }
 
-section{
-    display: inline;
+section > li{
+    display: table;
+    margin: auto;
+}
+
+.a_menu{
+    font-size: 24px;
+    text-decoration: none;
+    padding: 5 30px;
+    background: #63e298;
+    color: #000;
+}
+
+.div_index{
+    background: rgba(80, 80, 80, 0.602);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.div_footer{
+    display: inline-block;
+}
+
+.img_footer{
+    cursor: pointer;
+}
+
+.btn_a{
+    width: 200px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 10;
+    display: block;
+    color: black;
+    background: rgb(100, 228, 88);
+    box-shadow: 0 3px 5px 3px rgb(34, 80, 30);
+    text-decoration: none;
 }
 
 .obj{
@@ -27,15 +57,14 @@ section{
     margin: auto;
     font-size: 20px;
     line-height: 50px;
-    text-align: center;
 }
 
 .contenedor > div{
-    display: block;
-    /* padding-bottom: 20px; */
+    /* display: block; */
     color: #fff;
     background: #000;
-    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 2px black;
+    position: relative;
 }
 
 .image{
@@ -43,9 +72,46 @@ section{
     display: block;
 }
 
+.btn_izq{
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: 0;
+    left: 1%;
+    color: #fff;
+    background: rgba(12, 2, 100, 0.75);
+    cursor: pointer;
+}
+
+.btn_der{
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    bottom: 0;
+    left: auto;
+    color: #fff;
+    background: rgba(12, 2, 100, 0.75);
+    cursor: pointer;
+}
+
 #body_index{
     background: url(../img/home_1.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#footer_global{
+    width: 100%;
+    background: rgba(241, 223, 198, 0.75);
+}
+
+#mapid {
+    height: 80%;
+    width: 80%;
+    margin: auto;
 }

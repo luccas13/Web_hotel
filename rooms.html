@@ -5,53 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/grid.css"/>
-    <title>Web Hotel</title>
+    <title>MERN Hotel</title>
 </head>
 <body id="body_index">
     <object class="obj" data="common/header-nav.html" type="text/x-scriptlet"></object>
-    <section class="contenedor">
+    <section class="contenedor centrado">
         <div>
-            <img src="img/room_1.png">
+            <img src="img/room_1.png" id="room1">
+            <button class="btn_izq" id="btn1_izq"><</button>
+            <button class="btn_der" id="btn1_der">></button>
         </div>
         <div>
             <header>
                 <h2>Habitación tipo 1</h2>
             </header>
             <section>
-                <p>Descripción<br>Precio</p>
+                <li>Una cama una plaza.</li>
+                <li>Un Televisor xx".</li>
+                <li>Baño con bañera.</li>
             </section>            
             <footer>
-                <p>Puntuación</p>
+                <p>Precio: ---  Puntuación: --- </p>
             </footer>
         </div>
         <div>
-            <img src="img/room_2.png">
+            <img src="img/room_2.png" id="room2">
+            <button class="btn_izq" id="btn2_izq"><</button>
+            <button class="btn_der" id="btn2_der"v>></button>
         </div>
         <div>
             <header>
                 <h2>Habitación tipo 2</h2>
             </header>
             <section>
-                <p>Descripción<br>Precio</p>
+                <li>Dos camas una plaza.</li>
+                <li>Un Televisor xx".</li>
+                <li>Baño con bañera.</li>
             </section>            
             <footer>
-                <p>Puntuación</p>
+                <p>Precio: ---  Puntuación: --- </p>
             </footer>
         </div>
         <div>
-            <img src="img/room_3.png">
+            <img src="img/room_3.png" id="room3">
+            <button class="btn_izq" id="btn3_izq"><</button>
+            <button class="btn_der" id="btn3_der">></button>
         </div>
         <div>
             <header>
                 <h2>Habitación tipo 3</h2>
             </header>
             <section>
-                <p>Descripción<br>Precio</p>
+                <li>Una cama matrimonial.</li>
+                <li>Un Televisor xx".</li>
+                <li>Baño con bañera.</li>
             </section>            
             <footer>
-                <p>Puntuación</p>
+                <p>Precio: ---  Puntuación: --- </p>
             </footer>
         </div>
     </section>
+    <br>
+    <object class="obj" data="common/footer.html" type="text/x-scriptlet"></object>
+    <script src="js/rooms.js"></script>
 </body>
 </html>
