@@ -4,12 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Web Hotel</title>
+    <!-- map utilizando leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- ----------------------------- -->
+    <title>MERN Hotel</title>
 </head>
 <body id="body_index">
     <object class="obj" data="common/header-nav.html" type="text/x-scriptlet"></object>
     <section>
-        <img src="img/ubi.png" class="image">
-    </section>    
+        <div id="mapid">
+            <script>
+                var mymap = L.map('mapid').setView([-29.4129447, -66.85571], 16);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                }).addTo(mymap);
+                
+                L.marker([-29.4129447, -66.85571]).addTo(mymap);
+            </script>
+        </div>
+    </section>
+    <br>
+    <object class="obj" data="common/footer.html" type="text/x-scriptlet"></object>   
 </body>
 </html>
