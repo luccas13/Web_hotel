@@ -7,12 +7,24 @@ section > li{
     margin: auto;
 }
 
+.nav_global{
+    background: rgba(241, 223, 198, 0.75);
+    height: 70px;
+    position: relative;
+    padding-left: 12.5%;
+}
+
 .a_menu{
     font-size: 24px;
     text-decoration: none;
-    padding: 5 30px;
-    background: #63e298;
+    height: 50px;
+    padding: 20px 15px 0 15px;
     color: #000;
+    float: left;
+}
+
+.a_menu:hover{
+    background: rgb(241, 223, 198);
 }
 
 .div_index{
