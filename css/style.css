@@ -1,13 +1,85 @@
 /* GENERAL */
-#body_index{
+
+
+/* CUERPO */
+.cuerpo{
+    height: 100%;
+    margin: 0;
     background: url(../img/home_1.png) no-repeat fixed;
     background-size: 100%;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed; */
 }
 
-li{
-    display: inline;
+
+/* BARRA DE NAVEGACIÓN */
+nav{
+    margin: 0 0 3% 0;
+}
+
+.menuPrincipal{
+    background: rgba(241, 223, 198, 0.75);
+    display: table;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.menuPrincipal li{
+    float: left;
+    line-height: 3rem;
+}
+
+.menuPrincipal a{
+    color: #111;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: .6s;
+}
+
+.menuPrincipal a:hover{
+    background: rgb(241, 223, 198);
+}
+
+/* GRID */
+.contenedor{
+    width: 1024px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: 512px 512px;
+    row-gap: 20px;
+}
+
+.contenedor > div{
+    color: white;
+    background: rgba(11, 19, 13, 0.85);
+    box-shadow: 0 0 0 2px rgb(15, 15, 15);
+    position: relative;
+}
+
+.contenedor img{
+    margin: auto;
+    display: block;
+}
+
+.contenedor button{
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    background: rgba(12, 2, 100, 0.75);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+}
+
+.button-right{
+    right: 1%;
+}
+
+.button-left{
+    left: 1%;
 }
 
 section > li{
@@ -15,47 +87,9 @@ section > li{
     margin: auto;
 }
 
-.obj{
-    width: 100% !important;
-    height: 150px;
-}
-
-.centrado{
-    text-align: center;
-}
-
-.contenedor{
-    width: 1024px;
-    margin: auto;
-    font-size: 20px;
-    line-height: 50px;
-}
-
-/* BARRA DE NAVEGACIÓN */
-
-.nav_global{
-    background: rgba(241, 223, 198, 0.75);
-    height: 70px;
-    position: relative;
-    padding-left: 12.5%;
-}
-
-.a_menu{
-    font-size: 24px;
-    text-decoration: none;
-    height: 50px;
-    padding: 20px 15px 0 15px;
-    color: #000;
-    float: left;
-}
-
-.a_menu:hover{
-    background: rgb(241, 223, 198);
-}
 
 /* RESERVAR */
-
-.div_index{
+.reservar{
     background: rgba(80, 80, 80, 0.602);
     width: 70%;
     height: 70%;
@@ -75,64 +109,30 @@ section > li{
     text-decoration: none;
 }
 
-/* PIE DE PÁGINA */
 
-#footer_global{
+/* PIE DE PÁGINA */
+.pie{
     width: 100%;
     background: rgba(241, 223, 198, 0.75);
+    text-align: center;
+    margin: 3% 0 0 0;
 }
 
-.div_footer{
+.pie > div > div{
     display: inline-block;
 }
 
-.img_footer{
+.pie img:hover{
     cursor: pointer;
 }
 
-/* GRID */
-
-.contenedor > div{
-    /* display: block; */
-    color: white;
-    background: rgba(11, 19, 13, 0.85);
-    box-shadow: 0 0 0 2px rgb(15, 15, 15);
-    position: relative;
+.pie ul{
+    list-style: none;
+    padding: 0;
 }
 
-.image{
-    margin: auto;
-    display: block;
-}
-
-.btn_izq{
-    width: min-content;
-    height: min-content;
-    position: absolute;
-    top: 50%;
-    right: auto;
-    bottom: 0;
-    left: 1%;
-    color: #fff;
-    background: rgba(12, 2, 100, 0.75);
-    cursor: pointer;
-}
-
-.btn_der{
-    width: min-content;
-    height: min-content;
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    bottom: 0;
-    left: auto;
-    color: #fff;
-    background: rgba(12, 2, 100, 0.75);
-    cursor: pointer;
-}
 
 /* LEAFLET */
-
 #mapid {
     height: 80%;
     width: 80%;
