@@ -1,3 +1,11 @@
+/* GENERAL */
+#body_index{
+    background: url(../img/home_1.png) no-repeat fixed;
+    background-size: 100%;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
 li{
     display: inline;
 }
@@ -6,6 +14,24 @@ section > li{
     display: table;
     margin: auto;
 }
+
+.obj{
+    width: 100% !important;
+    height: 150px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.contenedor{
+    width: 1024px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* BARRA DE NAVEGACIÓN */
 
 .nav_global{
     background: rgba(241, 223, 198, 0.75);
@@ -27,20 +53,14 @@ section > li{
     background: rgb(241, 223, 198);
 }
 
+/* RESERVAR */
+
 .div_index{
     background: rgba(80, 80, 80, 0.602);
     width: 70%;
     height: 70%;
     margin: auto;
     border: 1px solid rgb(0, 0, 0);
-}
-
-.div_footer{
-    display: inline-block;
-}
-
-.img_footer{
-    cursor: pointer;
 }
 
 .btn_a{
@@ -55,21 +75,22 @@ section > li{
     text-decoration: none;
 }
 
-.obj{
-    width: 100% !important;
-    height: 150px;
+/* PIE DE PÁGINA */
+
+#footer_global{
+    width: 100%;
+    background: rgba(241, 223, 198, 0.75);
 }
 
-.centrado{
-    text-align: center;
+.div_footer{
+    display: inline-block;
 }
 
-.contenedor{
-    width: 1024px;
-    margin: auto;
-    font-size: 20px;
-    line-height: 50px;
+.img_footer{
+    cursor: pointer;
 }
+
+/* GRID */
 
 .contenedor > div{
     /* display: block; */
@@ -110,17 +131,7 @@ section > li{
     cursor: pointer;
 }
 
-#body_index{
-    background: url(../img/home_1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#footer_global{
-    width: 100%;
-    background: rgba(241, 223, 198, 0.75);
-}
+/* LEAFLET */
 
 #mapid {
     height: 80%;
