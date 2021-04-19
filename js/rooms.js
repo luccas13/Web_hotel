@@ -1,15 +1,15 @@
-var aux1 = 0,
-    aux2 = 0,
-    aux3 = 0,
-    room1 = document.getElementById("room1"),
-    room2 = document.getElementById("room2"),
-    room3 = document.getElementById("room3"),
-    btn1_izq = document.getElementById("btn1_izq"),
-    btn1_der = document.getElementById("btn1_der");
-    btn2_izq = document.getElementById("btn2_izq"),
-    btn2_der = document.getElementById("btn2_der"),
-    btn3_izq = document.getElementById("btn3_izq"),
-    btn3_der = document.getElementById("btn3_der");
+var aux1 = 0;
+var aux2 = 0;
+var aux3 = 0;
+var room1 = document.getElementById("room1");
+var room2 = document.getElementById("room2");
+var room3 = document.getElementById("room3");
+var btn1_izq = document.getElementById("btn1_izq");
+var btn1_der = document.getElementById("btn1_der");
+var btn2_izq = document.getElementById("btn2_izq");
+var btn2_der = document.getElementById("btn2_der");
+var btn3_izq = document.getElementById("btn3_izq");
+var btn3_der = document.getElementById("btn3_der");
 
 
     function change_1_izq(){
@@ -78,9 +78,9 @@ var aux1 = 0,
         }
     }
 
-btn1_izq.addEventListener("click", change_1_izq)
-btn1_der.addEventListener("click", change_1_der)
-btn2_izq.addEventListener("click", change_2_izq)
-btn2_der.addEventListener("click", change_2_der)
-btn3_izq.addEventListener("click", change_3_izq)
-btn3_der.addEventListener("click", change_3_der)
+btn1_izq.addEventListener("click", change_1_izq);
+btn1_der.addEventListener("click", change_1_der);
+btn2_izq.addEventListener("click", change_2_izq);
+btn2_der.addEventListener("click", change_2_der);
+btn3_izq.addEventListener("click", change_3_izq);
+btn3_der.addEventListener("click", change_3_der);
