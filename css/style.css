@@ -1,18 +1,21 @@
 /* GENERAL */
-
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
 /* CUERPO */
 .cuerpo{
     height: 100%;
-    margin: 0;
     background: url(../img/home_1.png) no-repeat fixed;
     background-size: 100%;
 }
 
 
 /* BARRA DE NAVEGACIÓN */
-nav{
-    margin: 0 0 3% 0;
+.cuerpo > nav{
+    margin: 0 0 5% 0;
 }
 
 .menuPrincipal{
@@ -20,7 +23,6 @@ nav{
     display: table;
     width: 100%;
     list-style: none;
-    padding: 0;
 }
 
 .menuPrincipal li{
@@ -97,11 +99,10 @@ section > li{
     border: 1px solid rgb(0, 0, 0);
 }
 
-.btn_a{
+.reservar a{
     width: 200px;
-    margin: auto;
-    margin-top: 20%;
-    padding: 10;
+    margin: 25% auto;
+    line-height: 2em;
     display: block;
     color: black;
     background: rgb(100, 228, 88);
@@ -114,8 +115,7 @@ section > li{
 .pie{
     width: 100%;
     background: rgba(241, 223, 198, 0.75);
-    text-align: center;
-    margin: 3% 0 0 0;
+    margin: 5% 0 0 0;
 }
 
 .pie > div > div{
@@ -128,7 +128,6 @@ section > li{
 
 .pie ul{
     list-style: none;
-    padding: 0;
 }
 
 
